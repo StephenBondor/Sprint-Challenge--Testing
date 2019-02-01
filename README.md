@@ -57,22 +57,56 @@ is clear and easy to read by your project manager.
 
     The point of TDD is to pad the pockets of engineers by dramatically
     increasing the code base and thus billable hours towards maintenance,
-    pivots, and sunk costs. I think TDD fails to address its own philosophical
-    shortcomings, namely, a true TDD environment should start by writing tests
-    to test the tests which test the tests etc. This is impossible, and stands
-    in direct conflict to actually producing anything. Consequently, TDD
-    destroys the desire for engineers to produce quality production code and
-    necessary and meaningful testing in the first place. It meaninglessly
-    balloons the code base thus teaching engineers to hate tests. It trains
-    engineers to be security vulnerabilities on the very projects they are
-    commissioned to secure. Further, I think TDD is a conglomeration of
-    anti-patterns and a destruction of valuable human capital. If regular
-    production code has a development time complexity of O(n) or perhaps O(n2),
-    true TDD has a time complexity of a minimum of O(n^2) as tests need to be
-    tested which need to be tested, etc. In short, TDD is a philosophically
-    corrupt, unethical, and evil burden to humankind.
+    pivots, and "high quality code". I think the TDD approach fails to address
+    its own philosophical shortcomings, namely, a true TDD environment should
+    start by writing tests to test the tests which test the tests which test the
+    tests, etc. This is impossible, and stands in direct conflict to actually
+    producing anything. At a corporate level, TDD dramatically exaggerates
+    costs, and creates outrageous sunk-cost artifacts. This has the effect of
+    retarding innovation and arresting a companies ability to pivot. At an
+    individual level, TDD destroys the desire and ability for engineers to
+    produce quality production code and necessary or meaningful tests:
 
-1. Mention three types of automated tests.
+    - Production Code: TDD stipulates that production code should only be built
+      after all the tests have been built. The underlying assumption here is
+      that the production code, if built first, would be subpar, and that by
+      creating all the test cases first the production code will meet a higher
+      standard. This is beating-around-the-bush because the testing code itself
+      must go through the exact same development process and often times (if not
+      always) is written by the same developers. Why should anyone trust that
+      the testing code be any better than the production code when their base
+      assumption is that the developers are subpar? Consequently, TDD allows
+      developers to take skin out of the game--it allows developers to shrug off
+      ownership of responsibility. It is no different than picking up a golf
+      ball and moving it to a better location instead of owning the fact that
+      one sucks at golf. It allows developers to fall into lazy patterns of
+      cowardice.
+
+    - Meaningful Tests: TDD implies that all testing code is more important than
+      production code. When this is the case, the purpose of doing a thing is
+      inverted--instead of eating to stay alive, if one stays alive to eat, they
+      are a glutton. This is a violation of the Law of Identity. If the purpose
+      of food is to stay alive, then the quality of the food matters. However,
+      as with the glutton, if the purpose of staying alive is to eat, then the
+      quality of the food does not matter, only the quantity. And so it is with
+      TDD. If the purpose of development is to produce then the quality,
+      targeting, and meaningfulness of tests matters tremendously. If the
+      purpose of development is to write tests, then the quality and meaning of
+      the tests no longer matter, all is trumped by quantity. When testing for
+      everything, one tests nothing.
+
+    TDD meaninglessly balloons the code base. It teaches engineers to hate
+    tests, training them to be security vulnerabilities on the very projects
+    they are commissioned to secure. TDD is a conglomeration of deep
+    philosophical anti-patterns which results in a destruction of valuable human
+    capital. If regular production code has a development time complexity of
+    O(n) or perhaps O(n2), true TDD has a time complexity of a minimum of O(2^n)
+    as tests need to be tested which need to be tested, etc.
+
+    In short, TDD is a philosophically corrupt, unethical, and evil burden to
+    humankind.
+
+1) Mention three types of automated tests.
 
     Unit tests, UI tests, Integration tests
 
