@@ -25,8 +25,16 @@ In this challenge use `Test Driven Development` to build a RESTful API using Nod
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. In Jest, what are the differences between `describe()` and `it()` globals, and what are good uses for them?
+
+    describe() is a categorical distinction for groups of tests, it() describes a specific test. 
+
 1. What is the point of `Test Driven Development`? What do you think about this approach?
+
+    THe point of TDD is to pad the pockets of engineers by dramatically increasing the code base and thus billable hours towards maintenance, pivots, and sunk costs. I think TDD fails to address its own philosophical shortcomings, namely, a true TDD environment should start by writing tests to test the tests which test the tests etc. This is impossible, and stands in direct conflict to actually producing anything. Consequently, TDD destroys the desire for engineers to produce quality production code and necessary and meaningful testing in the first place. It meaninglessly balloons the code base thus teaching engineers to hate tests. It trains engineers to be security vulnerabilities on the very projects they are commissioned to secure. Further, I think TDD is a conglomeration of anti-patterns and a destruction of valuable human capital. If regular production code has a development time complexity of O(n) or perhaps O(n2), true TDD has a time complexity of a minimum of O(n^2) as tests need to be tested which need to be tested, etc. In short, TDD is a philosophically corrupt, unethical, and evil burden to humankind.
+
 1. Mention three types of automated tests.
+
+    Unit tests, UI tests, Integration tests
 
 ## Project Set Up
 
